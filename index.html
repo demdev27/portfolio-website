@@ -15,35 +15,48 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <div class="logo">
-        <img src="./assets/img/devjane.png" alt="logo-picture" />
+      <div class="navigation-bar">
+        <div class="logo">
+          <img src="./assets/img/placeholder.com-logo1.png" alt="logo-picture" />
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nal__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nal__item">
+              <a href="#services" class="nav__link">My Services</a>
+            </li>
+            <li class="nal__item">
+              <a href="#about" class="nav__link">About me</a>
+            </li>
+            <li class="nal__item"><a href="#work" class="nav__link">My work</a></li>
+          </ul>
+        </nav>
       </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nal__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nal__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nal__item"><a href="#work" class="nav__link">About me</a></li>
-          <li class="nal__item"><a href="#" class="nav__link">My work</a></li>
-        </ul>
-      </nav>
     </header>
 
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi, I'm <strong>Vadym Demchenko</strong>
+        Hi, I'm <strong>Vadym</strong>
+        <!-- <strong>Demchenko</strong> -->
       </h1>
       <p class="section__subtitle section__subtitle--intro">a front-end dev</p>
       <img
-        src="<!--./assets/img/dev-jane-01.jpg-->"
+        class="intro__img"
+        src="./assets/img/avatar-placeholder.jpg"
         alt="A picture of Vadym smiling"
       />
     </section>
@@ -92,24 +105,42 @@
     <!-- About me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & developer based out of NYC
+      </p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+        </p>
       </div>
 
-      <img src="./assets/img/dev-jane-02.jpg" alt="Jane leaning against a bus" />
+      <img
+        src="./assets/img/photo-placeholder.jpg"
+        alt="Jane leaning against a bus"
+        class="about-me__img"
+      />
     </section>
 
     <!-- My Work -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
-        <a href="#" class="portfolio__item">
+        <a href="portfolio_item_1.html" class="portfolio__item">
           <img src="./assets/img/portfolio-01.jpg" alt="" class="portfolio__img" />
         </a>
 
@@ -161,23 +192,38 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <!-- replace with your own email address -->
       <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="https://codepen.io">a</a>
+          <a class="social-list__link" href="http://instagram.com">
+            <!-- <i class="fab fa-instagram-square"></i> -->
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          b<a class="social-list__link" href="http://dribbble.com"></a>
+          <a class="social-list__link" href="https://facebook.com">
+            <!-- <i class="fab fa-facebook-square"></i> -->
+            <i class="fab fa-facebook-f"></i>
+            <!-- <i class="fab fa-facebook"></i> -->
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com">c</a>
+          <a class="social-list__link" href="https://twitter.com">
+            <!-- <i class="fab fa-twitter-square"></i> -->
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://github.com">d</a>
+          <a class="social-list__link" href="https://youtube.com">
+            <!-- <i class="fab fa-youtube-square"></i> -->
+            <i class="fab fa-youtube"></i>
+          </a>
         </li>
       </ul>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
